@@ -31,7 +31,7 @@ class EnderecoService {
                     $row['created_at'],
                     $row['updated_at']
                 );
-                $endereco->usuario_nome = $row['usuario_nome'] . ' ' . $row['usuario_sobrenome'];
+                $endereco->setUsuarioNome($row['usuario_nome'] . ' ' . $row['usuario_sobrenome']);
                 $enderecos[] = $endereco;
             }
             

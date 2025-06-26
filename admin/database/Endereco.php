@@ -12,6 +12,7 @@ class Endereco {
     private $bairro;
     private $created_at;
     private $updated_at;
+    private $usuario_nome;
 
     // Construtor da classe (Quem inicializa o objeto)
     public function __construct($id = null, $user_id = null, $nome = null, $rua = null, $numero = null, $cidade = null, $bairro = null, $created_at = null, $updated_at = null) {
@@ -32,6 +33,9 @@ class Endereco {
 
     public function getUserId() { return $this->user_id; }
     public function setUserId($user_id) { $this->user_id = $user_id; }
+
+    public function getUsuarioNome() { return $this->usuario_nome; }
+    public function setUsuarioNome($usuario_nome) { $this->usuario_nome = $usuario_nome; }
 
     public function getNome() { return $this->nome; }
     public function setNome($nome) { $this->nome = $nome; }
@@ -64,6 +68,7 @@ class Endereco {
         }
         return null;
     }
+    
 }
 
 ?> 

@@ -162,7 +162,7 @@ $usuarios = $enderecoService->getAllUsuarios();
                         <tr class="hover:bg-gray-50">
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <div class="text-sm font-medium text-gray-900">
-                                    <?php echo htmlspecialchars($endereco->usuario_nome ?? 'Usuário não encontrado'); ?>
+                                    <?php echo htmlspecialchars($endereco->getUsuarioNome() ?? 'Usuário não encontrado'); ?>
                                 </div>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap">
